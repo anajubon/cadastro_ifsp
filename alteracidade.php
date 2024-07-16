@@ -12,56 +12,57 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="alteracidade.css">
 </head>
 <body>
     <form action="alteracidadeexe.php" method="post">
         <fieldset>
-            <legend>CADASTRO DE CIDADES</legend>
+            <h1>CADASTRO DE CIDADES</h1>
             <button><a href="index.html">PÁGINA INICIAL</a></button>
             <button><a href="listarcidade.php">CIDADES CADASTRADAS</a></button>
         <div>
-            <label for="nome">nome</label>
+            <label id="text" for="nome">NOME</label>
             <input type="text" 
                     name="nome" 
                     id="nome"
                     value="<?php echo $row['nome']?>">
         </div>  
         <div>
-            <label for="estado">estado</label>
+            <label id="text" for="estado">ESTADO</label>
             <select name="estado" id="estado">
-                <option value="ac"<?php $row['estado'] == "ac" ? "selected" : "" ?>>AC</option>
-                <option value="al"<?php $row['estado'] == "al" ? "selected" : "" ?>>AL</option>
-                <option value="am"<?php $row['estado'] == "am" ? "selected" : "" ?>>AM</option>
-                <option value="ap"<?php $row['estado'] == "ap" ? "selected" : "" ?>>AP</option>
-                <option value="ba"<?php $row['estado'] == "ba" ? "selected" : "" ?>>BA</option>
-                <option value="ce"<?php $row['estado'] == "ce" ? "selected" : "" ?>>CE</option>
-                <option value="df"<?php $row['estado'] == "df" ? "selected" : "" ?>>DF</option>
-                <option value="es"<?php $row['estado'] == "es" ? "selected" : "" ?>>ES</option>
-                <option value="go"<?php $row['estado'] == "go" ? "selected" : "" ?>>GO</option>
-                <option value="ma"<?php $row['estado'] == "ma" ? "selected" : "" ?>>MA</option>
-                <option value="mt"<?php $row['estado'] == "mt" ? "selected" : "" ?>>MT</option>
-                <option value="ms"<?php $row['estado'] == "ms" ? "selected" : "" ?>>MS</option>
-                <option value="mg"<?php $row['estado'] == "mg" ? "selected" : "" ?>>MG</option>
-                <option value="pa"<?php $row['estado'] == "pa" ? "selected" : "" ?>>PA</option>
-                <option value="pb"<?php $row['estado'] == "pb" ? "selected" : "" ?>>PB</option>
-                <option value="pr"<?php $row['estado'] == "pr" ? "selected" : "" ?>>PR</option>
-                <option value="pe"<?php $row['estado'] == "pe" ? "selected" : "" ?>>PE</option>
-                <option value="pi"<?php $row['estado'] == "pi" ? "selected" : "" ?>>PI</option>
-                <option value="rj"<?php $row['estado'] == "rj" ? "selected" : "" ?>>RJ</option>
-                <option value="rn"<?php $row['estado'] == "ac" ? "selected" : "" ?>>RN</option>
-                <option value="ro"<?php $row['estado'] == "ro" ? "selected" : "" ?>>RO</option>
-                <option value="rs"<?php $row['estado'] == "rs" ? "selected" : "" ?>>RS</option>
-                <option value="rr"<?php $row['estado'] == "rr" ? "selected" : "" ?>>RR</option>
-                <option value="sc"<?php $row['estado'] == "sc" ? "selected" : "" ?>>SC</option>
-                <option value="sp"<?php $row['estado'] == "sp" ? "selected" : "" ?>>SP</option>
-                <option value="se"<?php $row['estado'] == "se" ? "selected" : "" ?>>SE</option>
-                <option value="to"<?php $row['estado'] == "to" ? "selected" : "" ?>>TO</option>
+                <option value="AC"<?php $row['estado'] == "AC" ? "selected" : "" ?>>AC</option>
+                <option value="AL"<?php $row['estado'] == "AL" ? "selected" : "" ?>>AL</option>
+                <option value="AM"<?php $row['estado'] == "AM" ? "selected" : "" ?>>AM</option>
+                <option value="AP"<?php $row['estado'] == "AP" ? "selected" : "" ?>>AP</option>
+                <option value="BA"<?php $row['estado'] == "BA" ? "selected" : "" ?>>BA</option>
+                <option value="CE"<?php $row['estado'] == "CE" ? "selected" : "" ?>>CE</option>
+                <option value="DF"<?php $row['estado'] == "DF" ? "selected" : "" ?>>DF</option>
+                <option value="ES"<?php $row['estado'] == "ES" ? "selected" : "" ?>>ES</option>
+                <option value="GO"<?php $row['estado'] == "GO" ? "selected" : "" ?>>GO</option>
+                <option value="MA"<?php $row['estado'] == "MA" ? "selected" : "" ?>>MA</option>
+                <option value="MT"<?php $row['estado'] == "MT" ? "selected" : "" ?>>MT</option>
+                <option value="MS"<?php $row['estado'] == "MS" ? "selected" : "" ?>>MS</option>
+                <option value="MG"<?php $row['estado'] == "MG" ? "selected" : "" ?>>MG</option>
+                <option value="PA"<?php $row['estado'] == "PA" ? "selected" : "" ?>>PA</option>
+                <option value="PB"<?php $row['estado'] == "PB" ? "selected" : "" ?>>PB</option>
+                <option value="PR"<?php $row['estado'] == "PR" ? "selected" : "" ?>>PR</option>
+                <option value="PE"<?php $row['estado'] == "PE" ? "selected" : "" ?>>PE</option>
+                <option value="PI"<?php $row['estado'] == "PI" ? "selected" : "" ?>>PI</option>
+                <option value="RJ"<?php $row['estado'] == "RJ" ? "selected" : "" ?>>RJ</option>
+                <option value="RN"<?php $row['estado'] == "RN" ? "selected" : "" ?>>RN</option>
+                <option value="RO"<?php $row['estado'] == "RO" ? "selected" : "" ?>>RO</option>
+                <option value="RS"<?php $row['estado'] == "RS" ? "selected" : "" ?>>RS</option>
+                <option value="RR"<?php $row['estado'] == "RR" ? "selected" : "" ?>>RR</option>
+                <option value="SC"<?php $row['estado'] == "SC" ? "selected" : "" ?>>SC</option>
+                <option value="SP"<?php $row['estado'] == "SP" ? "selected" : "" ?>>SP</option>
+                <option value="SE"<?php $row['estado'] == "SE" ? "selected" : "" ?>>SE</option>
+                <option value="TO"<?php $row['estado'] == "TO" ? "selected" : "" ?>>TO</option>
             </select>
         </div>
         <div>
             <input type="hidden" name="id" value="<?php echo $row['id']?>"> 
-            
-            <button type="submit">alterar</button>
+
+            <button type="submit"><a>ALTERAR</a></button>
         </div>
         </fieldset>
     </form>
