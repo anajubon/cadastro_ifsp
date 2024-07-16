@@ -16,7 +16,10 @@
     <h1>alterção de cidade</h1>
 
     <?php
-        $sql = "UPDATE cidade SET
+                echo "<p>ID: $id</p>";
+                echo "<p>NOME: $nome</p>";
+                echo "<p>ESTADO: $estado</p>";
+                $sql = "UPDATE cidade SET
                 nome = '$nome',
                 estado = '$estado'
                 WHERE id = $id";
