@@ -9,14 +9,16 @@
 <body>
     <?php
     include('includes/conexao.php');
-    $nomecidade = $_POST['nomecidade'];
-    $estado = $_POST['estado'];
-    echo "<h1>dados da cidade</h1>";
-    echo "nomecidade: $nomecidade <br>";  
-    echo "estado: $estado <br>";   
+    $nome = $_POST['nome'];
+    $estado = $_POST['email'];
+    $estado = $_POST['senha'];
+    echo "<h1>dados do cliente</h1>";
+    echo "nome: $nome <br>";  
+    echo "estado: $email <br>";  
+    echo "senha: $email <br>"; 
     
-    $sql = "INSERT INTO cidade (nomecidade, estado)";
-    $sql.= "VALUES('".$nomecidade."', '".$estado."')";
+    $sql = "INSERT INTO cliente (nome, email, senha)";
+    $sql.= "VALUES('".$nome."', '".$email."', '".$senha."')";
     echo $sql;
 
     $result = mysqli_query($con, $sql);

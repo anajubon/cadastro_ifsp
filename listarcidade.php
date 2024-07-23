@@ -31,7 +31,7 @@
             while($row = mysqli_fetch_array($result)){
                 echo "<tr>";
                 echo "<td>".$row['id']."</td>";
-                echo "<td>".$row['nome']."</td>";
+                echo "<td>".$row['nomecidade']."</td>";
                 echo "<td>".$row['estado']."</td>";
                 echo "<td><a href='alteracidade.php?id=".$row['id']."'>ALTERAR</a></td>";
                 echo "<td><a href='deletacidade.php?id=".$row['id']."'>DELETAR</a></td>";

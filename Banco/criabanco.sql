@@ -7,7 +7,7 @@ use ifsp;
 create table cidade
 (
     id          int auto_increment,
-    nome        varchar(100),
+    nomecidade        varchar(100),
     estado      varchar(002),
     primary key(id)    
 );

@@ -21,11 +21,11 @@
             <button><a href="index.html">PÁGINA INICIAL</a></button>
             <button><a href="listarcidade.php">CIDADES CADASTRADAS</a></button>
         <div>
-            <label id="text" for="nome">NOME</label>
+            <label id="text" for="nomecidade">NOME</label>
             <input type="text" 
-                    name="nome" 
-                    id="nome"
-                    value="<?php echo $row['nome']?>">
+                    name="nomecidade" 
+                    id="nomecidade"
+                    value="<?php echo $row['nomecidade']?>">
         </div>  
         <div>
             <label id="text" for="estado">ESTADO</label>

@@ -1,7 +1,7 @@
 <?php
     include('includes/conexao.php');
     $id = $_POST['id'];
-    $nome = $_POST['nome'];
+    $nomecidade = $_POST['nomecidade'];
     $estado = $_POST['estado'];
 ?>
 <!DOCTYPE html>
@@ -17,10 +17,10 @@
 
     <?php
                 echo "<p>ID: $id</p>";
-                echo "<p>NOME: $nome</p>";
+                echo "<p>NOME: $nomecidade</p>";
                 echo "<p>ESTADO: $estado</p>";
                 $sql = "UPDATE cidade SET
-                nome = '$nome',
+                nomecidade = '$nomecidade',
                 estado = '$estado'
                 WHERE id = $id";
         $result = mysqli_query($con, $sql);
