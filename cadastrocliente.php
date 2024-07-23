@@ -10,12 +10,12 @@
     <?php
     include('includes/conexao.php');
     $nome = $_POST['nome'];
-    $estado = $_POST['email'];
-    $estado = $_POST['senha'];
+    $email = $_POST['email'];
+    $senha = $_POST['senha'];
     echo "<h1>dados do cliente</h1>";
     echo "nome: $nome <br>";  
-    echo "estado: $email <br>";  
-    echo "senha: $email <br>"; 
+    echo "email: $email <br>";  
+    echo "senha: $senha <br>"; 
     
     $sql = "INSERT INTO cliente (nome, email, senha)";
     $sql.= "VALUES('".$nome."', '".$email."', '".$senha."')";

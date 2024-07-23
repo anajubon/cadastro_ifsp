@@ -39,10 +39,9 @@ button a:hover {
     text-decoration: underline;
     
 }
-.cor{
-    background: rgb(253, 196, 227);
+
+#text{
     color: #b30054;
     font-family: Georgia, 'Times New Roman', Times, serif;
-}
-
+    }
 
