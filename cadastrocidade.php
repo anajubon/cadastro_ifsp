@@ -15,7 +15,7 @@
     echo "nomecidade: $nomecidade <br>";  
     echo "estado: $estado <br>";   
     
-    $sql = "INSERT INTO cidade (nomecidade, estado)";
+    $sql = 'INSERT INTO cidade (nomecidade, estado)';
     $sql.= "VALUES('".$nomecidade."', '".$estado."')";
     echo $sql;
 
