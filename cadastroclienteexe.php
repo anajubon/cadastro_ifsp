@@ -23,6 +23,8 @@
     
     $sql = "INSERT INTO cliente (nome, email, senha, ativo, id_cidade)";
     $sql.= "VALUES('".$nome."', '".$email."', '".$senha."', '".$ativo."', '".$cidade."')";
+
+    echo $sql;
  
 
     $result = mysqli_query($con, $sql);

@@ -13,7 +13,7 @@
     $sql = "SELECT cli.id, cli.ativo, cli.nome nomecliente, cli.email,
                 cid.nomecidade nomecidade, cid.estado
             FROM cliente cli
-            LEFT JOIN cidade cid on cid.id = cli.id";
+            LEFT JOIN cidade cid on cid.id = cli.id_cidade";
     //retorna consulta
     $result = mysqli_query($con, $sql);
     ?>
